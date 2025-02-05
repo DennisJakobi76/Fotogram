@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fotogram</title>
+        <link
+            rel="shortcut icon"
+            href="./images/favicon_fotogram.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/color.css" />
+        <script src="./scripts/main.js" defer></script>
+        <script src="./scripts/template.js" defer></script>
+    </head>
+    <body onload="renderImages()">
+        <header>
+            <img src="./images/logo_fotogram.svg" alt="Fotogram-Logo" />
+        </header>
+        <main>
+            <div id="all-imgs-container"></div>
+            <div id="overlay" class="d_none"></div>
+        </main>
+        <footer>
+            <img
+                src="./images/profile_image_dj.jpg"
+                alt="Foto des Erstellers der Seite"
+            />
+            <p>Dennis Jakobi</p>
+        </footer>
+    </body>
+</html>

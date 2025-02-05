@@ -9,9 +9,7 @@ function getOverlayHtml(event, counter) {
     return `<div class="overlay-container">
                 <div class="overlayHead">
                     <div>
-                        <span id="img-title">${event.target.src
-                            .replace(/^.*[\\/]/, '')
-                            .replace('.avif', '')}</span>
+                        <span id="img-title">${event.target.src.replace(/^.*[\\/]/, "").replace(".avif", "")}</span>
                     </div>
                     <div class="overlay-close-button" onclick="closeOverlay()">
                         <div id="overlay-close-x1"></div>
@@ -19,15 +17,11 @@ function getOverlayHtml(event, counter) {
                     </div>
                 </div>
                 <div id="overlay-picked-img" class="overlay-picked-img">
-                    <img id="overlay-img" src="${event.target.src}" alt="${
-        event.target.alt
-    }" />
+                    <img id="overlay-img" src="${event.target.src}" alt="${event.target.alt}" />
                 </div>
                 <div class="overlay-footer-nav">
                     <button id="overlay-nav-left" class="overlay-nav-arrow" onclick="getNextImageLeft()">&#8678</button>
-                    <div id="overlay-nav-counter">${
-                        parseInt(event.target.id) + 1
-                    }/${counter}</div>
+                    <div id="overlay-nav-counter">${parseInt(event.target.id) + 1}/${counter}</div>
                     <button id="overlay-nav-right" class="overlay-nav-arrow" onclick="getNextImageRight()">&#8680</button>
                 </div>
             </div>
@@ -43,5 +37,5 @@ function renderNewCounter(imageCounter, arrayLength) {
 }
 
 function renderNewTitle(title) {
-    return `${title.replace(/^.*[\\/]/, '').replace('.avif', '')}`;
+    return `${title.replace(/^.*[\\/]/, "").replace(".avif", "")}`;
 }
